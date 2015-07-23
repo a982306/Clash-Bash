@@ -1,17 +1,41 @@
 package com.example.kory.clash_bash;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 
 public class MainActivity extends ActionBarActivity {
+
+    private Button trackingButton;
+    private Button schedulingButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //Tracking button to open Tracking Activity
+        trackingButton = (Button)findViewById(R.id.tracking_button);
+        trackingButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, TrackingActivity.class));
+            }
+        });
+
+        //Scheduling button to open Scheduling Activity
+        schedulingButton = (Button)findViewById(R.id.scheduling_button);
+        schedulingButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, SchedulingActivity.class));
+            }
+        });
     }
 
 
