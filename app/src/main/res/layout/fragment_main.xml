@@ -23,7 +23,11 @@
             android:layout_gravity="center_horizontal"
             android:background="@drawable/tracking_background_image"
             android:textColor="#ffffffff"
-            android:singleLine="true" />
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:gravity="center_horizontal"
+            android:fontFamily="Sans" />
 
         <Button
             android:id="@+id/scheduling_button"
@@ -33,7 +37,12 @@
             android:layout_marginTop="10dp"
             android:text="@string/scheduling"
             android:layout_gravity="center_horizontal"
-            android:background="@drawable/scheduling_background_image"/>
+            android:background="@drawable/scheduling_background_image"
+            android:gravity="center_horizontal"
+            android:textSize="24dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:fontFamily="Sans" />
     </LinearLayout>
 
 </RelativeLayout>
