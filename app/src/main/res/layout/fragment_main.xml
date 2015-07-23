@@ -1,5 +1,7 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
@@ -13,18 +15,25 @@
         android:layout_centerHorizontal="true">
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/tracking"
             android:id="@+id/tracking_button"
-            android:layout_gravity="center_horizontal" />
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:text="@string/tracking"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/tracking_background_image"
+            android:textColor="#ffffffff"
+            android:singleLine="true" />
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/scheduling"
             android:id="@+id/scheduling_button"
-            android:layout_gravity="center_horizontal"/>
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:layout_marginTop="10dp"
+            android:text="@string/scheduling"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/scheduling_background_image"/>
     </LinearLayout>
 
 </RelativeLayout>
