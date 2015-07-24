@@ -1,5 +1,11 @@
 <resources>
     <string name="app_name">Clash Bash</string>
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="tracking">Tracking</string>
+    <string name="scheduling">Scheduling</string>
+    <string name="town_hall_lvl">Town Hall LvL</string>
+    <string name="builders">Number of Builders</string>
+    <string name="pref_town_hall_lvl_default" translatable="false">10</string>
+    <string name="pref_town_hall_lvl_title">Town Hall Level</string>
+    <string name="pref_town_hall__lvl_key" translatable="false">town_hall_lvl</string>
 </resources>
